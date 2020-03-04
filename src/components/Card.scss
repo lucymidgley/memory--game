@@ -32,4 +32,11 @@ $appointment-height: 11rem;
 }
 
 
-     
+
+@media only screen and (max-width: 960px) {
+  .card {
+    height: 20rem;
+    width: 15rem;
+  }
+  
+}

@@ -1,17 +1,18 @@
-import React from "react";
+import React, {Fragment} from "react";
 
 import "components/Application.scss";
-import CardListItem from "./CardListItem"
+import CardList from "./CardList"
 import Header from "./Header"
-
+import { cards } from './cards'
 export default function Application(props) {
   return (
-    <main className="layout">
-      <Header />
-      <CardListItem/>
-      <section className="schedule">
-        {/* Replace this with the schedule elements durint the "The Scheduler" activity. */}
-      </section>
+    <Fragment>
+    <Header />
+      <main className="layout">
+      <CardList
+        cards = {cards}
+      />
     </main>
+    </Fragment>
   );
 }
