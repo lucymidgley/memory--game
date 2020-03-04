@@ -7,18 +7,23 @@
 
 @import "styles/typography.scss";
 
+
 * {
   box-sizing: border-box;
 }
 
 body {
   font-family: $font-family;
+  background-color:  $main-background;
 }
 
 .layout {
   display: flex;
   min-height: 100vh;
+  flex-direction: column;
 }
+
+
 
 @media only screen and (max-width: 960px) {
   html {

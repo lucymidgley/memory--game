@@ -1,0 +1,35 @@
+@import "styles/variables.scss";
+@import "styles/mixins.scss";
+@import "styles/animations.scss";
+
+
+
+
+$appointment-height: 11rem;
+
+
+.card {
+  height: 11rem;
+  width: 15rem;
+  border-radius: 3em;
+  color: rgba($booked-color, $active-opacity);
+  background-color: $regular-color; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+  &:hover {
+    color: darken($white, 5%);
+    background-color: $hover-color;
+    box-shadow: 0px 4px 8px rgba(black, 0.5);
+  }
+  &-text{
+    color: white;
+    font-size: 2em;
+  }
+  margin: 1em;
+}
+
+
+     
