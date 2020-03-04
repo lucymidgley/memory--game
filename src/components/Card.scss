@@ -9,6 +9,7 @@ $appointment-height: 11rem;
 
 
 .card {
+  
   height: 11rem;
   width: 15rem;
   border-radius: 3em;
@@ -20,15 +21,22 @@ $appointment-height: 11rem;
 
 
   &:hover {
-    color: darken($white, 5%);
     background-color: $hover-color;
     box-shadow: 0px 4px 8px rgba(black, 0.5);
   }
   &-text{
-    color: white;
     font-size: 2em;
   }
   margin: 1em;
+  &--selected_1 {
+    color: black;
+    background-color: $header-background;
+  }
+  &--selected_2 {
+    color: black;
+    background-color: $header-background;
+  }
+  
 }
 
 

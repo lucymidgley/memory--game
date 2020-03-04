@@ -3,8 +3,8 @@ import React from "react";
 import "components/Header.scss";
 import { FaPastafarianism } from 'react-icons/fa';
 
-export default function Header() {
+export default function Header(props) {
    return ( <header className="header">
-   <div className="header-text"> <FaPastafarianism /> Memory Game <FaPastafarianism /></div>
+   <div className="header-text"> <FaPastafarianism /> score = {props.score} <FaPastafarianism /> </div>
 </header>);
 }

@@ -5,7 +5,10 @@ export default function CardList(props) {
   const cards = props.cards.map( card => {
     return <CardListItem 
     key = {card.id}
-    icon = {card.icon} />
+    icon = {card.icon}
+    selected_1={card.id === props.card_1}
+    selected_2={card.id === props.card_2}
+    setCard={(event) => props.setCard(card.id)}  />
   })
   return cards;
  }

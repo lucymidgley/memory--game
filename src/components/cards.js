@@ -9,6 +9,7 @@ export const cards = [
   {
     id: 2,
     icon: <FaDrumSteelpan />
+
   },
   {
     id: 3,
