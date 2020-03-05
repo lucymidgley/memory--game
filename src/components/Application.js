@@ -1,4 +1,4 @@
-import React, {Fragment, useState } from "react";
+import React, {Fragment, useState, useEffect } from "react";
 
 import "components/Application.scss";
 import CardList from "./CardList"
@@ -13,6 +13,7 @@ export default function Application(props) {
   const [counter, setCounter] = useState(0)
   const [score, setScore] = useState(0)
   const [text, setText] = useState("")
+
   return (
     <Fragment>
     <Header score={score} text={text} />
@@ -26,11 +27,21 @@ export default function Application(props) {
         setCard = {(card) => {
           if(counter % 2 === 0){
             setCounter(counter + 1)
+            if( state.card_2 === (card + 6) || state.card_2 === (card - 6) ){
+              setText("Yippee")
+            }else {
+              setText("")
+            }
             setState({...state, card_1:card})
           } else {
             setCounter(counter + 1)
+            if(state.card_1 === (card + 6) || state.card_1 === (card - 6)  ){
+              setText("Yippee")
+            }else {
+              setText("")
+            }
             setState({...state, card_2:card})}
-        }
+      }
       }
          
       />
